@@ -1,0 +1,27 @@
+@import '../../config/variables/colors.scss';
+@import '../../config/mixin.scss';
+
+.container {
+  border-bottom: 0.2px solid $Primary-500;
+  background: rgba(6, 16, 26, 0.45);
+  backdrop-filter: blur(12.5px);
+}
+
+.menu {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logo {
+  height: 42px;
+  padding: 0 1px;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  @include primaryBtn();
+}

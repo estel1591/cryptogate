@@ -11,3 +11,41 @@
   color: $Neutrals-900;
   text-decoration: none;
 }
+
+@mixin container {
+  width: 100%;
+  max-width: 1312px;
+  margin: auto;
+}
+
+@mixin h1Styles {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+@mixin h2Styles {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+@mixin h3Styles {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+@mixin h4Styles {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 38px;
+}
