@@ -1,0 +1,11 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+
+.logoWrapper {
+  @include container();
+  padding: 0 0 $offset-large;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 847px;
+}
