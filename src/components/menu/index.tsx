@@ -1,13 +1,13 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import './index.scss';
-import { ReactComponent as ReactLogo } from '../../icons/logo.svg';
+import { ReactComponent as Logo } from '../../icons/logo.svg';
 
 const Menu: FC = () => {
   return (
     <div className="container">
       <div className="menu">
         <div className="logo">
-          <ReactLogo />
+          <Logo />
         </div>
         <a href="/" className="btn">
           get a course

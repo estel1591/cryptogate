@@ -1,14 +1,19 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Menu from './components/menu/index';
 import Title from './components/title/index';
+import Logos from './components/logos/index';
 import './App.scss';
 
 const App: FC = () => {
   return (
-    <div className="layout">
-      <Menu />
-      <Title />
-    </div>
+    <>
+      <div className="firstScreen">
+        <Menu />
+        <Title />
+        <Logos />
+      </div>
+      courses
+    </>
   );
 };
 

@@ -4,8 +4,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   background-color: black;
   color: $Neutrals-White;
+}
+
+.firstScreen {
+  background-image: url(../public/background-first-screen.png);
+  background-attachment: fixed;
 }
