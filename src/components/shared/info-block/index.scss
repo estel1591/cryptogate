@@ -1,0 +1,21 @@
+@import '../../../config/mixin.scss';
+@import '../../../config/variables/offsets.scss';
+
+.infoWrapper {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $offset-small;
+
+  h2 {
+    @include h2Styles();
+    margin: 0 0 $offset-small 0;
+  }
+
+  p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+}

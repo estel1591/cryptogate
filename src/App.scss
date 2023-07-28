@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,500&display=swap');
-
+@import './config/fonts.scss';
 @import './config/variables/colors.scss';
+@import './config/variables/layout.scss';
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 60px;
-  letter-spacing: 0.8px;
-  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: $Neutrals-900;
   color: $Neutrals-White;
+  background-image: url(../public/background-first-screen.png);
+  background-repeat: no-repeat;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $offset-article;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }

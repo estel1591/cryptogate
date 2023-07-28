@@ -1,0 +1,53 @@
+@import './offsets.scss';
+
+.row {
+  gap: $gap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: calc((8.33% * 2) + $gap);
+}
+
+.col-3 {
+  width: calc((8.33% * 3) + 2 * $gap);
+}
+
+.col-4 {
+  width: calc((8.33% * 4) + 3 * $gap);
+}
+
+.col-5 {
+  width: calc((8.33% * 5) + 4 * $gap);
+}
+
+.col-6 {
+  width: calc((8.33% * 6) + 5 * $gap);
+}
+
+.col-7 {
+  width: calc((8.33% * 7) + 6 * $gap);
+}
+
+.col-8 {
+  width: calc((8.33% * 8) + 7 * $gap);
+}
+
+.col-9 {
+  width: calc((8.33% * 9) + 8 * $gap);
+}
+
+.col-10 {
+  width: calc((8.33% * 10) + 9 * $gap);
+}
+
+.col-11 {
+  width: calc((8.33% * 11) + 10 * $gap);
+}
+
+.col-12 {
+  width: 100%;
+}
