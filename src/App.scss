@@ -1,16 +1,23 @@
 @import './config/fonts.scss';
 @import './config/variables/colors.scss';
+@import './config/variables/layout.scss';
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background-color: black;
+  background-color: $Neutrals-900;
   color: $Neutrals-White;
+  background-image: url(../public/background-first-screen.png);
+  background-repeat: no-repeat;
 }
 
-.firstScreen {
-  background-image: url(../public/background-first-screen.png);
-  background-attachment: fixed;
+p {
+  margin-top: 0;
+  margin-bottom: $offset-article;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
