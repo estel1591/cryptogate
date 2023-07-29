@@ -1,12 +1,12 @@
 @import './config/fonts.scss';
 @import './config/variables/colors.scss';
 @import './config/variables/layout.scss';
+@import './config/mixin.scss';
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  @include paragraphSmall();
   background-color: $Neutrals-900;
   color: $Neutrals-White;
   background-image: url(../public/background-first-screen.png);
