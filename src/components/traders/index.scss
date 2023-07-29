@@ -1,0 +1,16 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+
+.tradersWrapper {
+  @include container();
+  margin: $offset-large auto;
+
+  h2 {
+    @include h2Styles();
+    margin: 0;
+  }
+
+  .tradersIcon {
+    text-align: right;
+  }
+}

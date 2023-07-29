@@ -1,0 +1,18 @@
+@import '../../../config/mixin.scss';
+@import '../../../config/variables/offsets.scss';
+@import '../../../config/variables/colors.scss';
+
+.cardBlock {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    @include h3Styles();
+    margin: $offset-small 0 $offset-article;
+  }
+
+  p {
+    @include paragraphSmall();
+    color: $Neutrals-200;
+  }
+}

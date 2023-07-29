@@ -1,0 +1,23 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.howToStartWrapper {
+  @include container();
+  margin-bottom: $offset-large;
+}
+
+.howToStartRow {
+  margin-bottom: $offset-small;
+}
+
+.howToStartBlock {
+  text-align: center;
+  margin: 0 $offset-article 0;
+
+  svg {
+    width: 94px;
+    height: 169px;
+    margin: 0 auto;
+  }
+}

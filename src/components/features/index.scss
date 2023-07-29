@@ -1,0 +1,15 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.featureBlock {
+  border-radius: 5px;
+  border: 0.5px solid $Primary-700;
+  background: linear-gradient(135deg, $Primary-800 0%, rgba(58, 63, 0, 0) 100%);
+  padding: $offset-small;
+
+  svg {
+    width: 160px;
+    height: 160px;
+  }
+}
