@@ -1,0 +1,6 @@
+@import '../../../config/mixin.scss';
+@import '../../../config/variables/colors.scss';
+
+.btn {
+  @include primaryBtn();
+}

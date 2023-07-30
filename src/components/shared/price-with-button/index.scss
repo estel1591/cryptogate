@@ -1,0 +1,13 @@
+@import '../../../config/mixin.scss';
+@import '../../../config/variables/colors.scss';
+@import '../../../config/variables/offsets.scss';
+
+.priceWrapper {
+  @include paragraphSmall();
+  margin: $offset-small 0 $offset-article;
+
+  span {
+    color: $Primary-400;
+    @include h2Styles();
+  }
+}

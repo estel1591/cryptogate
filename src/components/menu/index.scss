@@ -1,7 +1,7 @@
 @import '../../config/variables/colors.scss';
 @import '../../config/mixin.scss';
 
-.container {
+.menuWrapper {
   border-bottom: 0.2px solid $Primary-500;
   background: rgba(6, 16, 26, 0.45);
   backdrop-filter: blur(12.5px);
@@ -20,8 +20,4 @@
   padding: 0 1px;
   display: flex;
   align-items: center;
-}
-
-.btn {
-  @include primaryBtn();
 }

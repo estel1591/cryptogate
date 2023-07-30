@@ -1,0 +1,8 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.coursesDetailsWrapper {
+  @include container();
+  margin: 0 auto $offset-large;
+}
