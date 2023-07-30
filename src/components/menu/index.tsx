@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import './index.scss';
 import { ReactComponent as Logo } from '../../icons/logo.svg';
+import PrimaryButton from '../../components/shared/primary-btn';
 
 const Menu: FC = () => {
   return (
@@ -9,9 +10,7 @@ const Menu: FC = () => {
         <div className="logo">
           <Logo />
         </div>
-        <a href="/" className="btn">
-          get a course
-        </a>
+        <PrimaryButton href="/">get a course</PrimaryButton>
       </div>
     </div>
   );
