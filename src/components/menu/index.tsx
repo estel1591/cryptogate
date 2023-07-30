@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '../../icons/logo.svg';
 
 const Menu: FC = () => {
   return (
-    <div className="container">
+    <div className="menuWrapper">
       <div className="menu">
         <div className="logo">
           <Logo />

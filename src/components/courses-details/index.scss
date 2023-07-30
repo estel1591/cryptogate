@@ -1,0 +1,38 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.coursesDetailsWrapper {
+  @include container();
+  margin: 0 auto $offset-large;
+}
+
+.courseBlock {
+  border-radius: 5px 5px 45px 45px;
+  border: 0.5px solid $Primary-700;
+  background: linear-gradient(135deg, $Primary-800 0%, rgba(58, 63, 0, 0) 100%);
+  padding: $offset-small;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.courseMainInfo {
+  max-width: 815px;
+
+  h2 {
+    @include h2Styles();
+    margin: 0 auto $offset-small;
+  }
+}
+
+.CourseParticularWrapper {
+  display: inline-block;
+  max-width: 600px;
+
+  p {
+    @include paragraphMedium();
+    color: $Neutrals-200;
+    margin-bottom: 24px;
+  }
+}
