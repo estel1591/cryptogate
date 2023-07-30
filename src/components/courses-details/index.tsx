@@ -19,6 +19,19 @@ const propsForFirstCourse = {
     'Learn from scratch about blockchain, Bitcoin, Ethereum, mining, bubble/boom, and how to make a profit trading cryptocurrency through this online course.',
   title: 'Cryptocurrency as a digital asset',
   courseNumber: '1',
+  contentFirstTab: (
+    <>
+      <p>At the end of this course, you will learn:</p>
+      <br />
+      <ul>
+        <li>Learn how to conduct a cryptocurrency assessment</li>
+        <li>Learn how to use crypto trading platforms</li>
+        <li>Learn how to conduct a technical analysis</li>
+        <li>Learn how to implement various investment strategies</li>
+        <li>Learn how to mitigate risk through risk management techniques</li>
+      </ul>
+    </>
+  ),
 };
 
 const propsForSecondCourse = {
@@ -36,6 +49,18 @@ const propsForSecondCourse = {
     'This digital asset investment course is a guide to understanding the nature of crypto investing. We look at the basic principles and strategies commonly used by various participants in the digital financial world.',
   title: 'Investing in digital assets',
   courseNumber: '2',
+  contentFirstTab: (
+    <>
+      <p>At the end of this course, you will learn:</p>
+      <br />
+      <ul>
+        <li>The basics of basic cryptocurrency investing and how to apply the theory learned</li>
+        <li>A strategy to help investors implement a specific course of action to identify</li>
+        <li>Understanding deals to help new investors get started in the market</li>
+        <li>Understanding risk management</li>
+      </ul>
+    </>
+  ),
 };
 
 const CoursesDeatils: FC = () => {

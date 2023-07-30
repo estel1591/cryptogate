@@ -6,13 +6,18 @@
   border-radius: 5px 5px 45px 45px;
   border: 0.5px solid $Primary-700;
   background: linear-gradient(135deg, $Primary-800 0%, rgba(58, 63, 0, 0) 100%);
-  padding: $offset-small;
   margin: 0 auto $offset-small;
+  display: flex;
+
+  &.row {
+    gap: 0;
+  }
 }
 
 .courseBlockLeft {
-  width: 70%;
   border-right: 0.5px solid $Primary-700;
+  padding: $offset-small;
+  width: 70%;
 
   h2 {
     @include h2Styles();
@@ -22,13 +27,13 @@
   svg {
     vertical-align: top;
     text-align: center;
-    width: 30%;
+    width: 20%;
   }
 }
 
 .courseParticularWrapper {
   display: inline-block;
-  max-width: 600px;
+  width: 80%;
 
   .courseParticularDescription {
     @include paragraphMedium();

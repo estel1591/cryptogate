@@ -1,0 +1,46 @@
+@import '../../../config/mixin.scss';
+@import '../../../config/variables/colors.scss';
+@import '../../../config/variables/offsets.scss';
+
+.tabs {
+  padding: 80px $offset-small $offset-small;
+  width: 30%;
+}
+
+.tabList {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 $offset-small;
+  list-style-type: none;
+  @include paragraphMedium();
+}
+
+.react-tabs__tab {
+  color: $Neutrals-600;
+}
+
+.react-tabs__tab:hover,
+.react-tabs__tab:focus {
+  color: $Neutrals-White;
+  cursor: pointer;
+  outline: none;
+}
+
+.react-tabs__tab--selected {
+  color: $Neutrals-White;
+}
+
+.tabPanel {
+  color: $Neutrals-200;
+  @include paragraphSmall();
+
+  p,
+  ul {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: $offset-article;
+  }
+}

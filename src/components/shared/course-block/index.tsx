@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import PriceWithButton from '../price-with-button';
 import CourseNumber from '../course-number';
 import CourseParticular from '../course-particular';
+import CoursesTabs from '../courses-tabs';
 import './index.scss';
 
 interface Props {
@@ -18,9 +19,18 @@ interface Props {
   };
   price: string;
   icon: ReactNode;
+  contentFirstTab: ReactNode;
 }
 
-const CourseBlock = ({ courseNumber, title, children, particular, price, icon }: Props) => {
+const CourseBlock = ({
+  courseNumber,
+  title,
+  children,
+  particular,
+  price,
+  icon,
+  contentFirstTab,
+}: Props) => {
   return (
     <div className="courseBlock">
       <div className="courseBlockLeft">
@@ -33,6 +43,11 @@ const CourseBlock = ({ courseNumber, title, children, particular, price, icon }:
         </div>
         {icon}
       </div>
+      <CoursesTabs
+        contentFirstTab={contentFirstTab}
+        contentSecondTab="content for Curriculum"
+        contentThirdTab="content for Lecturers"
+      />
     </div>
   );
 };
