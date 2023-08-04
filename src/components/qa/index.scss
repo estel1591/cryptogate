@@ -1,0 +1,7 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+
+.qaWrapper {
+  @include container();
+  margin-bottom: $offset-large;
+}

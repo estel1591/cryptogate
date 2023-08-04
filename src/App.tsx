@@ -8,6 +8,7 @@ import Traders from './components/traders/index';
 import CoursesDeatils from './components/courses-details/index';
 import BringToWorld from './components/bring-to-world/index';
 import Carousel from './components/carousel/index';
+import QA from './components/qa/index';
 import './App.scss';
 
 const App: FC = () => {
@@ -22,6 +23,7 @@ const App: FC = () => {
       <CoursesDeatils />
       <BringToWorld />
       <Carousel />
+      <QA />
     </>
   );
 };
