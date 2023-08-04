@@ -1,0 +1,7 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+
+.bringToWorldWrapper {
+  @include container();
+  margin-bottom: $offset-large;
+}

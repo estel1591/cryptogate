@@ -1,0 +1,81 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.carouselWrapper {
+  @include container();
+  margin-bottom: $offset-large;
+  border-radius: 5px;
+  border: 0.5px solid $Primary-700;
+}
+
+.slick-slider {
+  margin: $offset-small;
+  position: relative;
+  display: flex;
+}
+
+.slick-list {
+  margin-bottom: 40px;
+}
+
+.slick-track {
+  margin: 0;
+}
+
+.slick-arrow {
+  top: calc(100% - 22px);
+  right: auto;
+  bottom: 0;
+  height: 30px;
+}
+
+.slick-arrow:before {
+  color: $Neutrals-700;
+  @include paragraphMedium();
+}
+
+.slick-arrow:hover:before {
+  color: $Neutrals-White;
+}
+
+.slick-next:before {
+  content: 'next';
+}
+
+.slick-prev:before {
+  content: 'previous';
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  left: 103px;
+}
+
+.slideWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 23px;
+
+  svg {
+    min-width: 40px;
+  }
+}
+
+.slideText {
+  max-width: 940px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  margin: 140px auto 0;
+  @include h4Styles();
+
+  span {
+    @include paragraphLarge();
+    color: $Neutrals-200;
+    padding: $offset-article 0;
+  }
+}
