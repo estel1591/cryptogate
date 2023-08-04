@@ -7,6 +7,7 @@ import HowToStart from './components/how-to-start/index';
 import Traders from './components/traders/index';
 import CoursesDeatils from './components/courses-details/index';
 import BringToWorld from './components/bring-to-world/index';
+import Carousel from './components/carousel/index';
 import './App.scss';
 
 const App: FC = () => {
@@ -20,8 +21,7 @@ const App: FC = () => {
       <Traders />
       <CoursesDeatils />
       <BringToWorld />
-      {/* https://www.npmjs.com/package/react-responsive-carousel
-      https://turbofuture.com/computers/React-Image-Carousel */}
+      <Carousel />
     </>
   );
 };
