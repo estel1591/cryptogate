@@ -68,7 +68,7 @@
 .slideText {
   max-width: 940px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   margin: 140px auto 0;
   @include h4Styles();

@@ -1,0 +1,58 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.formWrapper {
+  background-image: url(../../../public/background-form.png);
+  background-repeat: no-repeat;
+}
+
+.formBlock {
+  padding: 64px 0;
+  width: 100%;
+  max-width: 864px;
+  margin: auto;
+
+  .btn {
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  h2 {
+    @include h2Styles();
+    margin: 0;
+    padding: 0 0 $offset-article;
+  }
+
+  p {
+    @include paragraphLarge();
+    color: $Neutrals-500;
+  }
+
+  input {
+    @include paragraphSmall();
+    width: 100%;
+    max-width: 416px;
+    height: 58px;
+    border-radius: 5px;
+    border: 1px solid $Neutrals-600;
+    background-color: transparent;
+    padding: 15px 12px;
+    margin: 0 0 $offset-article;
+    color: $Neutrals-White;
+    box-sizing: border-box;
+  }
+
+  input:hover {
+    border-color: $Neutrals-400;
+  }
+
+  input:focus {
+    border-color: $Neutrals-White;
+  }
+
+  input::placeholder {
+    color: $Neutrals-400;
+  }
+}
