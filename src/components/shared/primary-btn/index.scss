@@ -6,12 +6,10 @@
 
   &:hover {
     background-color: $Primary-300;
-    transition: all 0.2s ease-out;
   }
 
   &:disabled {
     background-color: $Primary-50;
     color: $Neutrals-600;
-    transition: all 0.2s ease-out;
   }
 }

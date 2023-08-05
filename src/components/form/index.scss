@@ -29,30 +29,20 @@
     @include paragraphLarge();
     color: $Neutrals-500;
   }
+}
 
-  input {
-    @include paragraphSmall();
-    width: 100%;
-    max-width: 416px;
-    height: 58px;
-    border-radius: 5px;
-    border: 1px solid $Neutrals-600;
-    background-color: transparent;
-    padding: 15px 12px;
-    margin: 0 0 $offset-article;
-    color: $Neutrals-White;
-    box-sizing: border-box;
-  }
+input {
+  @include input();
+}
 
-  input:hover {
-    border-color: $Neutrals-400;
-  }
+input:hover {
+  border-color: $Neutrals-400;
+}
 
-  input:focus {
-    border-color: $Neutrals-White;
-  }
+input:focus {
+  border-color: $Neutrals-White;
+}
 
-  input::placeholder {
-    color: $Neutrals-400;
-  }
+input::placeholder {
+  color: $Neutrals-400;
 }
