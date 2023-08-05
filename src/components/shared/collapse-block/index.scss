@@ -1,0 +1,41 @@
+@import '../../../config/mixin.scss';
+@import '../../../config/variables/offsets.scss';
+@import '../../../config/variables/colors.scss';
+
+.collapseBlock {
+  border-top: 1px solid $Primary-100;
+  padding: 24px 0;
+  color: $Neutrals-White;
+  display: flex;
+
+  .collapseQuestion {
+    @include paragraphLarge();
+  }
+
+  .collapseAnswer {
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    @include paragraphSmall();
+  }
+
+  svg {
+    min-width: 41px;
+    margin-left: $gap;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+  }
+
+  svg:hover {
+    transform: rotate(45deg);
+  }
+}
+
+.active {
+  .collapseAnswer {
+    margin: $offset-article 0 0 0;
+  }
+
+  svg {
+    transform: rotate(45deg);
+  }
+}

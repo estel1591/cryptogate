@@ -11,6 +11,21 @@
   color: $Neutrals-900;
   text-decoration: none;
   display: inline-block;
+  transition: all 0.2s ease-out;
+}
+
+@mixin input {
+  @include paragraphSmall();
+  width: 100%;
+  max-width: 416px;
+  height: 58px;
+  border-radius: 5px;
+  border: 1px solid $Neutrals-600;
+  background-color: transparent;
+  padding: 15px 12px;
+  margin: 0 0 $offset-article;
+  color: $Neutrals-White;
+  box-sizing: border-box;
 }
 
 @mixin container {

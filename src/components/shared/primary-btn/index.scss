@@ -3,4 +3,13 @@
 
 .btn {
   @include primaryBtn();
+
+  &:hover {
+    background-color: $Primary-300;
+  }
+
+  &:disabled {
+    background-color: $Primary-50;
+    color: $Neutrals-600;
+  }
 }

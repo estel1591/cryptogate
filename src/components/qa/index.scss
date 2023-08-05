@@ -1,0 +1,12 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.qaWrapper {
+  @include container();
+  margin-bottom: $offset-large;
+
+  .borderStyle {
+    border-bottom: 1px solid $Primary-100;
+  }
+}
