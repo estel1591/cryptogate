@@ -65,7 +65,7 @@ const propsForSecondCourse = {
 
 const CoursesDeatils: FC = () => {
   return (
-    <div className="coursesDetailsWrapper">
+    <div className="coursesDetailsWrapper" id="courses">
       <CourseBlock {...propsForFirstCourse} />
       <CourseBlock {...propsForSecondCourse} />
     </div>

@@ -13,7 +13,7 @@ const Carousel: FC = () => {
   };
 
   return (
-    <div className="carouselWrapper">
+    <div className="carouselWrapper" id="reviews">
       <Slider {...settings}>
         <Slide sign="Ann, USA">
           Earning a professional certification in cryptocurrency courses: This is one of my big

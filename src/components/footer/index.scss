@@ -1,0 +1,58 @@
+@import '../../config/mixin.scss';
+@import '../../config/variables/offsets.scss';
+@import '../../config/variables/colors.scss';
+
+.footerWrapper {
+  @include container();
+  margin-top: $offset-large;
+
+  h3 {
+    @include h3Styles();
+    color: $Primary-400;
+    margin: 0 auto $offset-article;
+  }
+
+  p {
+    @include paragraphSmall();
+    color: $Neutrals-200;
+    margin: 0;
+  }
+
+  span {
+    @include paragraphSmall();
+    color: $Neutrals-700;
+    display: block;
+    text-align: center;
+    margin: 0 0 $offset-article;
+  }
+}
+
+.footerLeft,
+.footerRight {
+  padding: $offset-small 0;
+}
+
+.footerLeft {
+  max-width: 417px;
+
+  a {
+    @include paragraphSmall();
+    color: $Primary-500;
+    text-decoration: none;
+  }
+}
+
+.footerRight {
+  a {
+    @include paragraphMedium();
+    display: block;
+    color: $Neutrals-200;
+    text-decoration: none;
+    min-width: 115px;
+    margin: 0 0 $offset-article;
+  }
+}
+
+.footerRight.row {
+  gap: 64px;
+}

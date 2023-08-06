@@ -10,7 +10,7 @@ const Menu: FC = () => {
         <div className="logo">
           <Logo />
         </div>
-        <PrimaryButton href="/">get a course</PrimaryButton>
+        <PrimaryButton href="/#countact-us">get a course</PrimaryButton>
       </div>
     </div>
   );
