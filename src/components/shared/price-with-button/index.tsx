@@ -11,7 +11,7 @@ const PriceWithButton = ({ price }: Props) => {
       <p className="priceWrapper">
         <span>{price}</span> course price
       </p>
-      <PrimaryButton href="/">get a course</PrimaryButton>
+      <PrimaryButton href="/#countact-us">get a course</PrimaryButton>
     </>
   );
 };

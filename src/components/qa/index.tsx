@@ -5,7 +5,7 @@ import './index.scss';
 
 const QAComponent: FC = () => {
   return (
-    <div className="qaWrapper">
+    <div className="qaWrapper" id="faq">
       <InfoBlock title="Your questions, our answers">
         <CollapseBlock
           question="How can I get a course certificate?"

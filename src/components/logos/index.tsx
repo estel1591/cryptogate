@@ -7,7 +7,7 @@ import './index.scss';
 
 const Logos: FC = () => {
   return (
-    <div className="logoWrapper">
+    <div id="partners" className="logoWrapper">
       <CoinBaseLogo />
       <MetaMaxLogo />
       <AvalanceLogo />

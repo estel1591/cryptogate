@@ -5,7 +5,7 @@ import './index.scss';
 
 const Courses: FC = () => {
   return (
-    <div className="coursesWrapper">
+    <div className="coursesWrapper" id="about-us">
       <InfoBlock title="Courses in crypto finance">
         <p>
           It all started with the fact that cryptocurrency became a real digital asset, which was

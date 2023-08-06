@@ -9,7 +9,7 @@ import './index.scss';
 
 const HowToStart: FC = () => {
   return (
-    <div className="howToStartWrapper">
+    <div className="howToStartWrapper" id="how-to-start">
       <InfoBlock title="How to start">
         <div className="row howToStartRow">
           <CardBlock
